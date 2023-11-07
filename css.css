@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+}
+
+main {
+  background: #f4f4f4;
+  padding: 100px 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.question-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5% 5% ;
+  height: 700px;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+.tag {
+  background: #6f6f6f;
+  padding: 10px;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 20px 0;
+  background: white;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  height: 50px;
+}
+
+button {
+  background: transparent;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transition: .3s;
+  border: 1px solid black;
+
+}
+.bookmark {
+  position: absolute;
+  top: -50px;
+  right: 100px;
+  height: 100px;
+}
+.profileBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 300px;
+}
+.smile {
+  height: 250px;
+}
+.content {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.votes {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+.votesBtn { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.votesBtn:hover {
+  background: #ececec;
+}
+.votesImg {
+  height: 20px;
+}
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
