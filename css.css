@@ -95,8 +95,9 @@ button:hover {
   top: -50px;
   right: 100px;
   height: 100px;
+  cursor: pointer;
 }
-.profileBlock {
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -132,3 +133,4 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
+
