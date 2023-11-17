@@ -2,39 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookmarks</title>
+  <title>Form</title>
   <link rel="stylesheet" href="../css.css">
+  <script src="/js/index.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Bookmarks</h1>
+    <h1>Form</h1>
   </header>
   <main>
     <div class="container">
+      <form action="" data-js="form" class="form">
+        <div class="inputBox">
+          <label for="question">Your question:</label>
+          <textarea type="text" id="question" placeholder="Type your question" data-js="questionInput" required maxlength="150"></textarea>
+        </div>
+        <div class="inputBox">
+          <label for="answer">Your answer:</label>
+          <textarea type="text" id="answer" data-js="answerInput" placeholder="Type your answer" required maxlength="150"></textarea>
+        </div>
+        <div class="inputBox">
+          <label for="tag">Tag:</label>
+          <input type="text" id="tag" data-js="tagInput" placeholder="#Type your tag" required>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+      <div data-js="card" class="card">
+      <div class="card-border"></div>
 
-      <article class="question-card">
-        <img class="bookmark" src="/assets/bookmark-solid.svg" alt="bookmark">
-        <h2>How can you vertically align elements inside a Flexbox container?</h2>
-        <button>Show Answer</button>
-        <div class="tags">
-          <span class="tag">#html</span>
-          <span class="tag">#сss</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#layout</span>
-        </div>
-      </article>
-      <article class="question-card">
-        <img class="bookmark" src="/assets/bookmark-solid.svg" alt="bookmark">
-        <h2>What display property value turns a container into a Flexbox?</h2>
-        <button>Show Answer</button>
-        <div class="tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-          <span class="tag">#responsive_design</span>
-        </div>
-      </article>
+      </div>
     </div>
   </main>
   <footer>
